@@ -43,6 +43,20 @@ https://ping.chinaz.com/live-push.bilivideo.com
 ```
 python3 bilitester.py
 ```
+执行结果参考
+![2B7D382F-3D8C-4F9E-9BFB-72C927595F2F](https://user-images.githubusercontent.com/47912037/154753637-d76f691d-b40b-4d7d-9068-a97baef54cbb.png)
+
+
+### 4.测试到节点的速度
+
+在OBS内将“服务器”替换为
+```
+rtmp://你抓取的低延迟IP/live-bvc/
+```
+然后直接推流测试即可。
+
+如果长时间稳定无丢帧，这个IP即可作为备选之一。
+
 
 
 ## 关于轮子
