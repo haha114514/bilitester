@@ -15,7 +15,7 @@ rtmp://你抓取的低延迟IP/live-bvc/
 
 ## 源码运行
 
-安装依赖:
+#1.安装依赖:
 
 For Windows cmd:
 ```
@@ -25,7 +25,8 @@ For Linux (tested on Arch Linux):
 ```
 sudo pip install -r requirements.txt
 ```
-获取额外的CDN IP
+
+#2.获取额外的CDN IP
 前往以下网址
 ```
 https://ping.chinaz.com/live-push.bilivideo.com
