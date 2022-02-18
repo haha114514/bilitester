@@ -53,6 +53,12 @@ python3 bilitester.py
 ```
 rtmp://你抓取的低延迟IP/live-bvc/
 ```
+
+例如
+
+![06FA45DB-CDB9-43FC-8573-89E12B95B6C1](https://user-images.githubusercontent.com/47912037/154753999-b71d1d6d-ff60-4115-bc46-3bf9b4581613.png)
+
+
 然后直接推流测试即可。
 
 如果长时间稳定无丢帧，这个IP即可作为备选之一。
