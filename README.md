@@ -15,7 +15,7 @@ rtmp://你抓取的低延迟IP/live-bvc/
 
 ## 源码运行
 
-#1.安装依赖:
+##1.安装依赖:
 
 For Windows cmd:
 ```
@@ -26,14 +26,14 @@ For Linux (tested on Arch Linux):
 sudo pip install -r requirements.txt
 ```
 
-#2.获取额外的CDN IP
+##2.获取额外的CDN IP
 前往以下网址
 ```
 https://ping.chinaz.com/live-push.bilivideo.com
 ```
 等待所有节点解析完毕，复制所有获取到的IP并且覆盖保存到根目录的```ip_list.txt```文本文档中
 
-执行 ```bilitester.py```
+##3.执行 ```bilitester.py```
 ```
 python3 bilitester.py
 ```
