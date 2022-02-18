@@ -10,13 +10,8 @@
 rtmp://你抓取的低延迟IP/live-bvc/
 ```
 
-
-另外, ```ip_list.txt``` 文件用于保存解析出来的ip列表, 当正常解析完成时, 该文件会刷新, 当解析失败时, 会读取该文件中的ip列表。
- 
 :warning: 在Win7上需要使用管理员权限运行! :warning:
 
-## EXE文件运行
-不熟悉Python的用户从 [releases](https://github.com/miyouzi/akamTester/releases/latest) 下载exe文件直接使用。
 
 ## 源码运行
 
@@ -30,20 +25,18 @@ For Linux (tested on Arch Linux):
 ```
 sudo pip install -r requirements.txt
 ```
-
-执行 ```akamTester.py```
+获取额外的CDN IP
+前往以下网址
 ```
-python3 akamTester.py
+https://ping.chinaz.com/live-push.bilivideo.com
+```
+等待所有节点解析完毕，复制所有获取到的IP并且覆盖保存到根目录的```ip_list.txt```文本文档中
+
+执行 ```bilitester.py```
+```
+python3 bilitester.py
 ```
 
-## 指定测试域名
-
-从v3.2开始, 用户可以通过```-u```参数指定测试域名.
-
-举例:
-```
-python3 akamTester.py -u upos-sz-mirrorks3.bilivideo.com
-```
 
 ## 关于轮子
 
