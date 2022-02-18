@@ -12,8 +12,6 @@
 rtmp://你抓取的低延迟IP/live-bvc/
 ```
 
-:warning: 在Win7上需要使用管理员权限运行! :warning:
-
 
 ## 源码运行
 
