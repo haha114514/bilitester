@@ -1,6 +1,8 @@
 # BiliTester
 批量测试B站直播推流（live-push.bilivideo.com）节点延迟，找出最低延迟的节点。
 
+修改自akamTester（https://github.com/miyouzi/akamTester）
+
 在之后在Hosts中追加：
 ```
 最低延迟的IP live-push.bilivideo.com
@@ -32,6 +34,12 @@ sudo pip install -r requirements.txt
 https://ping.chinaz.com/live-push.bilivideo.com
 ```
 等待所有节点解析完毕，复制所有获取到的IP并且覆盖保存到根目录的```ip_list.txt```文本文档中
+
+![17FE5351-EEC2-475A-A63F-8764F6A95F75](https://user-images.githubusercontent.com/47912037/154753260-3b88862b-94dc-4c8b-8490-966fd90bb595.png)
+
+<img width="1072" alt="EBCE95E5-9929-4276-AC05-FF0CED26ED0F" src="https://user-images.githubusercontent.com/47912037/154753323-4c0f823d-fdf0-49ce-8e81-96192d515629.png">
+
+
 
 ### 3.执行 ```bilitester.py```
 ```
