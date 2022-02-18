@@ -63,37 +63,12 @@ rtmp://你抓取的低延迟IP/live-bvc/
 
 如果长时间稳定无丢帧，这个IP即可作为备选之一。
 
+### 常见问题
+
+#### Q1:为什么抓出来的IP过一段时间就不能用了
+
+#### A1:可能只是IP失效了，直接重新抓取最新IP之后再测试一次。
 
 
-## 关于轮子
 
-### GlobalDNS
-```GlobalDNS``` 是个对域名进行全球解析的类, 使用 www.whatsmydns.net 的 API 进行解析，额外包含本地、谷歌、腾讯、阿里 DNS 的解析结果。
 
-**导入**
-```
-from GlobalDNS import GlobalDNS
-```
-
-**使用**
-```
-akam = GlobalDNS('upos-hz-mirrorakam.akamaized.net')
-ip_list = akam.get_ip_list()  # 取得全球解析结果, 返回一个 set
-akam.renew()  # 重新解析
-ip_list = akam.get_ip_list()  # 将返回最近一次全球解析的结果
-```
-
-### ColorPrinter
-```ColorPrinter``` 染色输出工具, 可输出红绿及默认颜色(一般终端为白色), 可跨平台, 包括pyCharm中的运行窗口
-
-**导入**
-```
-from ColorPrinter import color_print
-```
-
-**使用**
-```
-color_print('Hello World')  # 默认输出颜色
-color_print('Hello World', status=1)  # 输出红色
-color_print('Hello World', status=2)  # 输出绿色
-```
