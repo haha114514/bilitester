@@ -1,7 +1,7 @@
 # BiliTester
-批量测试B站直播推流（live-push.bilivideo.com）节点延迟，找出最低延迟的节点。
+## 修改自akamTester（https://github.com/miyouzi/akamTester）
 
-修改自akamTester（https://github.com/miyouzi/akamTester）
+批量测试B站直播推流（live-push.bilivideo.com）节点延迟，找出最低延迟的节点。
 
 在之后在Hosts中追加：
 ```
