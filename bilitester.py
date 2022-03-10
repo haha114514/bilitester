@@ -22,7 +22,7 @@ def ping_test(ip):
     result = ping(ip, count=5)
     delay = result.rtt_avg_ms
     msg = ip + '\t平均延迟: ' + str(delay) + ' ms'
-    if 5<delay<100: # 避免因为localhost延迟为零从而结果只显示100ms以下的节点。
+    if 5<delay<100: 
         color_print(msg)
     else:
         color_print(msg)
@@ -106,7 +106,7 @@ with concurrent.futures.ThreadPoolExecutor() as executor:
 
 for delay, ip in zip(delays, ip_list):
     ip_info.append({'ip': ip, 'delay': delay})
-    if delay < 100:
+    if 5 < delay < 100: # 避免因为localhost延迟为零从而结果只显示100ms以下的节点。
         good_ips.append({'ip': ip, 'delay': delay})
 
 print()
