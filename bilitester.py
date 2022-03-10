@@ -22,7 +22,7 @@ def ping_test(ip):
     result = ping(ip, count=5)
     delay = result.rtt_avg_ms
     msg = ip + '\t平均延迟: ' + str(delay) + ' ms'
-    if delay<100:
+    if 0<delay<100: # 避免因为localhost延迟为零从而结果只显示100ms以下的节点。
         color_print(msg)
     else:
         color_print(msg)
@@ -121,7 +121,7 @@ if len(good_ips) > 0:
 else:
     ip_info.sort(key=lambda x:x['delay'])
     num = len(ip_info)  # 要显示的节点数
-    if num > 8:  # 如果解析的节点数超过 3 个, 那么显示 3 个就行
+    if num > 8:  # 如果解析的节点数超过 8 个, 那么显示 8 个就行
         num = 8
     color_print(myip_location(), status=2)
     color_print('本次测试未能找到延迟低于100ms的IP! 以下为延迟最低的 ' + str(num) + ' 个节点', status=2)
