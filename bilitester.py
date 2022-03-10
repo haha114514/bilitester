@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @Time    : 2019/7/19 16:52
-# @Author  : Miyouzi
-# @File    : akamTester.py
-# @Software: PyCharm
+
 
 from pythonping import ping
 from ColorPrinter import color_print
