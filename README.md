@@ -1,4 +1,7 @@
 # BiliTester
+
+# 已废弃，B站给RTMP和SRT的IP都增加了IP认证，目前无法海外直推了。
+
 ## 修改自akamTester（https://github.com/miyouzi/akamTester）
 
 批量测试B站直播推流（live-push.bilivideo.com）节点延迟，找出最低延迟的节点。
